@@ -1,9 +1,4 @@
 /*
- * Same css...
- */
-
-
-/*
  * Color variables
  */
 :root {
@@ -37,7 +32,6 @@ p {
     padding: 0;
 
 }
-
 
 .file-selector>ul>li>a {
     text-decoration: none;
@@ -128,6 +122,9 @@ ul#menu-bar>li>a:hover {
     background-color: var(--main-background-color);
 }
 
+/*
+ * Oraganization of layout
+ */
 .grid {
     display: grid;
     width: 99vw;
@@ -137,6 +134,9 @@ ul#menu-bar>li>a:hover {
     grid-gap: 1px;
 }
 
+/*
+ * Creating trapeze shape buttons
+ */
 .tab {
     background-color: var(--main-background-color);
     text-align: center;
@@ -155,6 +155,9 @@ ul#menu-bar>li>a:hover {
 
 @media screen and (max-width: 600px) {
 
+    /*
+     * Changing menu display to vertical
+     */
     ul#menu-bar>li {
         float: none;
         text-align: center;
@@ -190,7 +193,6 @@ ul#menu-bar>li>a:hover {
     }
 
     .grid {
-        display: grid;
         grid-template-columns: none;
         grid-template-rows: none;
         grid-template-areas:
@@ -200,6 +202,5 @@ ul#menu-bar>li>a:hover {
             'program-elements'
             'tabs'
             'data';
-        flex-direction: column;
     }
 }
